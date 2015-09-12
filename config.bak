@@ -1,0 +1,126 @@
+ï»¿<?xml version="1.0" encoding="UTF-8" ?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "se.axbay.hello"
+		versionCode="100"
+		version   = "1.0.0">
+	<!-- versionCode is optional and Android only -->
+
+	<name>Hello</name>
+
+	<description>
+		Hello - Gissa vilken fråga den svarar på ... och vad det har med streckkoden att göra
+	</description>
+
+	<author href="http://www.axbay.se" email="hans.ekman@axbay.se">
+		Hans Ekman, Axbay SE
+	</author>
+
+	<!-- <gap:platform name="ios" /> -->
+	<gap:platform name="android" />
+	<!--gap:platform name="webos" /-->
+	<!--gap:platform name="symbian" /-->
+	<!--gap:platform name="blackberry" /-->
+	<!--gap:platform name="winphone" /-->
+
+	<access origin="*" />
+	<access origin="*://facebook.*" />
+	<access origin="http://facebook*" />
+	<access origin="http://www.facebook*" />
+	<access origin="https://nattpasset*" />
+	<access origin="https://www.nattpasset*" />
+	<access origin="https://facebook*" />
+	<access origin="https://www.facebook*" />
+	<access origin="http://m.facebook.com" />
+	<access origin="http://graph.facebook.com" />
+	<access origin="http://api.facebook.com" />
+	<access origin="http://*.fbcdn.net" />
+	<access origin="http://*.akamaihd.net" />
+	<access origin="http://smsresurs.se" subdomains="true" />
+	<access origin="http://api.openweathermap.org" subdomains="true" />
+
+	<feature name="http://api.phonegap.com/1.0/device" />
+	<!-- feature name="http://api.phonegap.com/1.0/battery"/ -->
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+	<!-- feature name="http://api.phonegap.com/1.0/contacts"/ -->
+	<!--feature name="http://api.phonegap.com/1.0/file"/-->
+	<!-- feature name="http://api.phonegap.com/1.0/geolocation"/ -->
+	<feature name="http://api.phonegap.com/1.0/media"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/internet"/>
+
+<!--
+	<feature name="Device">
+		<param name="android-package" value="org.apache.cordova.device.Device" />
+	</feature>
+  <feature name="Device">
+  	<param name="ios-package" value="CDVDevice" />
+  </feature>
+  <feature name="File">
+  	<param name="ios-package" value="CDVFile" />
+  </feature>
+  <feature name="FileTransfer">
+  	<param name="ios-package" value="CDVFileTransfer" />
+  </feature>
+  <feature name="StatusBar">
+  	<param name="ios-package" value="CDVStatusBar" onload="true" />
+  </feature>
+-->
+
+
+	<preference name="UIWebViewBounce" value="false" />
+	<preference name="phonegap-version" value="3.3.0"/>						<!-- all: current version of PhoneGap -->
+	<preference name="orientation" value="portrait" />								<!-- all: default means both landscape and portrait are enabled -->
+	<preference name="target-device" value="universal" />						<!-- all: possible values handset, tablet, or universal -->
+	<preference name="fullscreen" value="true" />										<!-- all: hides the status bar at the top of the screen -->
+	<preference name="webviewbounce" value="false" />								<!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+	<preference name="prerendered-icon" value="false" />							<!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+	<preference name="stay-in-webview" value="false" />							<!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
+	<preference name="ios-statusbarstyle" value="black-translucent" />		<!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+	<preference name="detect-data-types" value="true" />						<!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+	<preference name="exit-on-suspend" value="false" />							<!-- ios: if set to true, app will terminate when home button is pressed -->
+	<preference name="show-splash-screen-spinner" value="true" />		<!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+	<preference name="auto-hide-splash-screen" value="true" />			<!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+	<preference name="SplashScreenDelay" value="3000" />
+	<preference name="disable-cursor" value="false" />							<!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
+	<preference name="android-minSdkVersion" value="7" />						<!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+	<preference name="android-installLocation" value="auto" />			<!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+
+	<gap:plugin name="org.apache.cordova.device" />
+	<gap:plugin name="org.apache.cordova.statusbar" />
+	<gap:plugin name="com.phonegap.plugins.barcodescanner" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+	<!--gap:plugin name="org.apache.cordova.device" /-->
+	<!--gap:plugin name="com.simonmacdonald.telephonenumber" /-->
+	<!--gap:plugin name="nl.x-services.plugins.socialsharing" /-->
+
+	<!-- iOS -->
+	<icon src="icons/ios/nattpasset_57.png" gap:platform="ios" width="57" height="57" />
+	<icon src="icons/ios/nattpasset_72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icons/ios/nattpasset_16.png" gap:platform="ios" width="76" height="76" />
+	<icon src="icons/ios/nattpasset_120.png" gap:platform="ios" width="120" height="120" />
+	<icon src="icons/ios/nattpasset_152.png" gap:platform="ios" width="152" height="152" />
+
+	<gap:splash src="splash/ios/iphone4s.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="splash/ios/iphone4s.png" gap:platform="ios" width="640" height="960" />
+	<gap:splash src="splash/ios/iphone5.png" gap:platform="ios" width="640" height="1136" />
+	<!--gap:splash src="splash/ios/Default-Landscape.png" gap:platform="ios" width="1024" height="768" /-->
+	<!--gap:splash src="splash/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1024" /-->
+
+	<!-- Android -->
+	<icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+	<gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+	<!-- Windows Phone -->
+	<icon src="icons/winphone/icon.png" gap:platform="winphone" />
+	<icon src="icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />
+	<gap:splash src="splash/winphone/splash.jpg" gap:platform="winphone" />
+
+</widget>

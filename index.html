@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+
+	<head>
+
+		<meta charset="utf-8" />
+		<title>Hello</title>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="jquerymobile/jquery.mobile-1.4.2.min.css" type="text/css">
+		<link rel="stylesheet" href="css/np.css">
+
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="jquerymobile/jquery.mobile-1.4.2.min.js"></script>
+		<script type="text/javascript" src="cordova.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/barcodescanner.js"></script>
+		<script type="text/javascript" src="js/scanner.js"></script>
+		<script type="text/javascript" src="js/webtoolkit.base64.js"></script>
+		<script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+
+	</head>
+
+	<body id="page_body">
+
+		<!-- homePage begins -->
+		<div data-role="page" id="homePage" data-title="HelloHasse" data-theme="a">
+
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" data-fullscreen="true" role="banner" style="height:60px; background-color: #238bb1; color: #555758; border:0px; overflow:hidden;">
+				<h1 class="ui-title" role="heading" aria-level="1" style="color: #FFF; text-shadow: 0 0; padding-top:30px;">Hello</h1>
+			</div>
+			<div data-role="content" style="margin-top:60px;">                                 
+
+				<div class="testBuild">
+					Test build
+				</div>
+
+            <input type="button" onclick="scanCode()" />
+
+			</div><!-- /content -->
+
+			<div data-role="footer" data-tap-toggle="false" data-position="fixed" data-fullscreen="true" data-theme="a">
+				<div data-role="navbar" data-position="fixed">
+					<ul>
+						<li><a href="#ticketsPage" data-transition="slidefade" class="showWhenLoggedin">???</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+
+		</div>
+		<!-- homePage ends -->
+
+	</body>
+</html>
