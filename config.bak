@@ -2,21 +2,21 @@
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "se.axbay.hello"
-		versionCode="100"
-		version   = "1.0.0">
+		versionCode="102"
+		version   = "1.0.2">
 	<!-- versionCode is optional and Android only -->
 
 	<name>Hello</name>
 
 	<description>
-		Hello - Gissa vilken fråga den svarar på ... och vad det har med streckkoden att göra
+		Hello - Gissa vilken fraga den svarar pa ... och vad det har med streckkoden att gora
 	</description>
 
 	<author href="http://www.axbay.se" email="hans.ekman@axbay.se">
 		Hans Ekman, Axbay SE
 	</author>
 
-	<!-- <gap:platform name="ios" /> -->
+	<!--gap:platform name="ios" /-->
 	<gap:platform name="android" />
 	<!--gap:platform name="webos" /-->
 	<!--gap:platform name="symbian" /-->

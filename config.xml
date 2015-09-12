@@ -21,7 +21,7 @@
 	<!--gap:platform name="webos" /-->
 	<!--gap:platform name="symbian" /-->
 	<!--gap:platform name="blackberry" /-->
-	<!--gap:platform name="winphone" /-->
+	<gap:platform name="winphone" />
 
 	<access origin="*" />
 	<access origin="*://facebook.*" />
