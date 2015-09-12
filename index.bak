@@ -23,7 +23,7 @@
 	<body id="page_body">
 
 		<!-- homePage begins -->
-		<div data-role="page" id="homePage" data-title="NattPasset" data-theme="a">
+		<div data-role="page" id="homePage" data-title="HelloHasse" data-theme="a">
 
 			<div data-role="header" data-tap-toggle="false" data-position="fixed" data-fullscreen="true" role="banner" style="height:60px; background-color: #238bb1; color: #555758; border:0px; overflow:hidden;">
 				<h1 class="ui-title" role="heading" aria-level="1" style="color: #FFF; text-shadow: 0 0; padding-top:30px;">Hello</h1>
@@ -34,7 +34,9 @@
 					Test build
 				</div>
 
-            <input type="button" onclick="scanCode()" />
+            <input type="button" maxlength="10" name="Scan-I" onclick="scanCode()" />
+
+            <button title="Scan-II" onclick="ScanCode()" />
 
 			</div><!-- /content -->
 
