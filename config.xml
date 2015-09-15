@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
-   <preference name="phonegap-version" value="3.7.0" />
 
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
@@ -19,7 +18,9 @@
 		Hans Ekman, Axbay SE
 	</author>
 
-	<gap:platform name="ios" />
+    <preference name="phonegap-version" value="3.7.0" />
+
+    <gap:platform name="ios" />
 	<gap:platform name="android" />
 	<!--gap:platform name="webos" /-->
 	<!--gap:platform name="symbian" /-->
@@ -125,5 +126,9 @@
 	<icon src="icons/winphone/icon.png" gap:platform="winphone" />
 	<icon src="icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />
 	<gap:splash src="splash/winphone/splash.jpg" gap:platform="winphone" />
+    
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+        <string>103</string>
+    </gap:config-file>
 
 </widget>
